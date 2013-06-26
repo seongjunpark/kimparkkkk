@@ -13,6 +13,7 @@ import android.content.Context;
 public class ALL extends Application {
 
 	private int state;
+	private int delete12;
     private static Context context;
 
 	@Override
