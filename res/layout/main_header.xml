@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_listview" >
+
+    <LinearLayout
+        android:id="@+id/clockbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/rounder_all"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/icon_clock"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/icon_clock" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/icon_clock"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/timeclock_day"
+                    android:layout_width="24dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_cancle3"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp"
+                    android:text="일"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/timeclock_hour"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_cancle3"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:paddingTop="3dp"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp"
+                    android:text=":"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/timeclock_min"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_cancle3"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:paddingTop="3dp"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp"
+                    android:text=":"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/timeclock_second"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_cancle3"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:paddingTop="3dp"
+                    android:text="초"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon_clock"
+                android:text="피자이벤트 남은시간"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="#00000000" />
+
+        <ImageView
+            android:id="@+id/btn_howpizza"
+            android:layout_width="104dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_howpizza" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topclassbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clockbox"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/eventrank"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back_topclass_header"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="현재 1등 인기반!"
+                android:textColor="#FFECBB"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:text="현재 1등 인기반!"
+                android:textColor="#6B3D01"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventrank"
+            android:background="@drawable/back_topclass_body2"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/back_topclass_one" >
+
+                <TextView
+                    android:id="@+id/title_grade3"
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="3학년"
+                    android:textColor="#595959" />
+
+                <ImageView
+                    android:id="@+id/grade3"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_below="@id/title_grade3"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/arrow" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/grade3"
+                    android:src="@drawable/icon_redmedal2" />
+
+                <TextView
+                    android:id="@+id/grade3_name"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/grade3"
+                    android:layout_centerHorizontal="true"
+                    android:background="#aa000000"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:singleLine="true"
+                    android:text="3학년"
+                    android:textColor="#ffffff" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/grade3_name"
+                    android:layout_alignLeft="@id/grade3"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/border_roundall"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/heart" />
+
+                    <TextView
+                        android:id="@+id/third_party_vote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="3dp"
+                        android:text="득표수"
+                        android:textColor="#aa000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/third_top_pic"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_above="@id/grade3_name"
+                    android:layout_alignRight="@id/grade3"
+                    android:layout_margin="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/male86" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/back_topclass_one" >
+
+                <TextView
+                    android:id="@+id/title_grade2"
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="2학년"
+                    android:textColor="#595959" />
+
+                <ImageView
+                    android:id="@+id/grade2"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_below="@id/title_grade2"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/arrow" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/grade2"
+                    android:src="@drawable/icon_bluemedal2" />
+
+                <TextView
+                    android:id="@+id/grade2_name"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/grade2"
+                    android:layout_centerHorizontal="true"
+                    android:background="#aa000000"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:singleLine="true"
+                    android:text="2학년"
+                    android:textColor="#ffffff" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/grade2_name"
+                    android:layout_alignLeft="@id/grade2"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/border_roundall"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/heart" />
+
+                    <TextView
+                        android:id="@+id/second_party_vote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="3dp"
+                        android:text="득표수"
+                        android:textColor="#aa000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/second_top_pic"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_above="@id/grade2_name"
+                    android:layout_alignRight="@id/grade2"
+                    android:layout_margin="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/male86" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/back_topclass_one" >
+
+                <TextView
+                    android:id="@+id/title_grade1"
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="1학년"
+                    android:textColor="#595959" />
+
+                <ImageView
+                    android:id="@+id/grade1"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_below="@id/title_grade1"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/arrow" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/grade1"
+                    android:src="@drawable/icon_greenmedal2" />
+
+                <TextView
+                    android:id="@+id/grade1_name"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/grade1"
+                    android:layout_centerHorizontal="true"
+                    android:background="#aa000000"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:singleLine="true"
+                    android:text="1학년"
+                    android:textColor="#ffffff" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/grade1_name"
+                    android:layout_alignLeft="@id/grade1"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/border_roundall"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/heart" />
+
+                    <TextView
+                        android:id="@+id/first_party_vote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="3dp"
+                        android:text="득표수"
+                        android:textColor="#aa000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/first_top_pic"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_above="@id/grade1_name"
+                    android:layout_alignRight="@id/grade1"
+                    android:layout_margin="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/male86" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:layout_below="@id/topclassbox"
+        android:background="#00000000"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

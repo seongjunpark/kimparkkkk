@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="친구초대하기" />
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="선택완료" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/friendlist1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_write_selected"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="10dp"
+        android:padding="5dp"
+        android:scrollbars="vertical" >
+    </ListView>
+
+</LinearLayout>

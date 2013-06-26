@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_listview2"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/ppic"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop" />
+		
+        <TextView
+            android:id="@+id/pname"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ppic"
+            android:layout_centerHorizontal="true"
+            android:background="#aa000000"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="3학년"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

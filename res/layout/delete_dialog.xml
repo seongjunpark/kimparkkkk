@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_setting"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_del"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:padding="7dp"
+        android:text="삭제"
+        android:textColor="#9c9c9c"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:scaleType="fitXY"
+        android:src="#d2d2d2" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:padding="7dp"
+        android:text="마이노트로 스크랩"
+        android:textColor="#9c9c9c"
+        android:textSize="15dp" />
+
+</LinearLayout>

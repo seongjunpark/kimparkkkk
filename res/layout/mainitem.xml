@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_listview2"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/third_party_pic"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/third_party_name"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/third_party_pic"
+            android:layout_centerHorizontal="true"
+            android:background="#aa000000"
+            android:gravity="center"
+            android:padding="1dp"
+            android:singleLine="true"
+            android:text="3학년"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/third_party_name"
+            android:layout_alignLeft="@id/third_party_pic"
+            android:layout_margin="2dp"
+            android:background="@drawable/border_roundall"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/heart" />
+
+            <TextView
+                android:id="@+id/third_party_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:text="득표수"
+                android:textColor="#aa000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/third_top_pic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_above="@id/third_party_name"
+            android:layout_alignRight="@id/third_party_pic"
+            android:layout_margin="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/male86" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/second_party_pic"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/second_party_name"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/second_party_pic"
+            android:layout_centerHorizontal="true"
+            android:background="#aa000000"
+            android:gravity="center"
+            android:padding="1dp"
+            android:singleLine="true"
+            android:text="2학년"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/second_party_name"
+            android:layout_alignLeft="@id/second_party_pic"
+            android:layout_margin="2dp"
+            android:background="@drawable/border_roundall"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/heart" />
+
+            <TextView
+                android:id="@+id/second_party_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:text="득표수"
+                android:textColor="#aa000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/second_top_pic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_above="@id/second_party_name"
+            android:layout_alignRight="@id/second_party_pic"
+            android:layout_margin="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/male86" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/first_party_pic"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/first_party_name"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/first_party_pic"
+            android:layout_centerHorizontal="true"
+            android:background="#aa000000"
+            android:gravity="center"
+            android:padding="1dp"
+            android:singleLine="true"
+            android:text="1학년"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/first_party_name"
+            android:layout_alignLeft="@id/first_party_pic"
+            android:layout_margin="2dp"
+            android:background="@drawable/border_roundall"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/heart" />
+
+            <TextView
+                android:id="@+id/first_party_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:text="득표수"
+                android:textColor="#aa000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+        
+                <ImageView
+            android:id="@+id/first_top_pic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="3dp"
+            android:layout_above="@id/first_party_name"
+            android:layout_alignRight="@id/first_party_pic"
+            android:src="@drawable/male86" />
+    </RelativeLayout>
+
+</LinearLayout>

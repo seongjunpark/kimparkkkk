@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#d3d3d3"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/navi_top"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/top_navi" >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:src="@drawable/logo" />
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="45dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_home" />
+
+            <ImageView
+                android:layout_width="0.8dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/home"
+                android:background="#aa62141d"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:background="@drawable/top_all"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_one"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:background="@drawable/top_selected"
+                android:shadowColor="#000000"
+                android:shadowDx="0.0"
+                android:shadowDy="3.0"
+                android:shadowRadius="2.0"
+                android:text="party"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_two"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:shadowColor="#000000"
+                android:shadowDx="0.0"
+                android:shadowDy="3.0"
+                android:shadowRadius="2.0"
+                android:text="note"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_three"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:shadowColor="#000000"
+                android:shadowDx="0.0"
+                android:shadowDy="3.0"
+                android:shadowRadius="2.0"
+                android:text="wassup"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/makeparty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn_makeparty"
+            android:text="+ 새로운 파티 만들기"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp" >
+
+            <Button
+                android:id="@+id/switch_cotentslist_left"
+                android:layout_width="74dp"
+                android:layout_height="36dp"
+                android:background="@drawable/btn_contents_left"
+                android:text="인기파티"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/switch_cotentslist_right"
+                android:layout_width="74dp"
+                android:layout_height="36dp"
+                android:background="@drawable/btn_contents_right_selected"
+                android:text="내파티"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="가입한 파티가 없습니다."
+            android:textColor="#0f0f0f"
+            android:gravity="center"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slidingPage01"
+        android:layout_width="280dp"
+        android:layout_height="370dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="-12dp"
+        android:layout_marginTop="29.2dp"
+        android:background="@drawable/back_slide"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="255dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/edit_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/back_search"
+                android:gravity="fill_horizontal"
+                android:hint="Search ..."
+                android:padding="7dp"
+                android:textColor="#000000"
+                android:textColorHint="#AAAAAA"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/search_glass"
+                android:layout_width="35dp"
+                android:layout_height="36.7dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/btn_search" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnkakao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="left"
+            android:paddingBottom="12dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="16dp"
+            android:text="카카오톡 친구 초대"
+            android:textColor="#676867"
+            android:textSize="16sp" />
+
+        <!-- 라인 -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#CECECE"
+            android:text="" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFFFFF"
+            android:text="" />
+
+        <Button
+            android:id="@+id/invite_alarm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="left"
+            android:paddingBottom="12dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="12dp"
+            android:text="파티요청"
+            android:textColor="#676867"
+            android:textSize="16sp" />
+
+        <!-- 라인 -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#CECECE"
+            android:text="" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFFFFF"
+            android:text="" />
+
+        <Button
+            android:id="@+id/invite_fr_alarm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="left"
+            android:paddingBottom="12dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="12dp"
+            android:text="친구요청"
+            android:textColor="#676867"
+            android:textSize="16sp" />
+
+        <!-- 라인 -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#CECECE"
+            android:text="" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFFFFF"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_friendlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="left"
+            android:paddingBottom="12dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="12dp"
+            android:text="친구목록"
+            android:textColor="#676867"
+            android:textSize="16sp" />
+
+        <!-- 라인 -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#CECECE"
+            android:text="" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFFFFF"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_partylist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="left"
+            android:onClick="onPartylistClick"
+            android:paddingBottom="12dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="12dp"
+            android:text="파티목록"
+            android:textColor="#676867"
+            android:textSize="16sp" />
+
+        <!-- 라인 -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#CECECE"
+            android:text="" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFFFFF"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="left"
+            android:paddingBottom="12dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="12dp"
+            android:text="계정관리"
+            android:textColor="#676867"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</FrameLayout>

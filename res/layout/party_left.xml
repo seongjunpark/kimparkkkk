@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#4c4c4c"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/invite_fr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="invite friends" />
+
+    <Button
+        android:id="@+id/join_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="join party" />
+
+    <ListView
+        android:id="@+id/member_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#141414"
+        android:scrollbars="none" >
+    </ListView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/left_gradient" />
+
+</RelativeLayout>

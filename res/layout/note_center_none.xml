@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#dfdfdf" >
+
+        <ImageView
+            android:id="@+id/notepic"
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/note_gradient" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/notepic"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp" >
+
+            <ImageButton
+                android:id="@+id/profilepic"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/countfriend"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@id/profilepic"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profilepic"
+                android:src="@drawable/friend" />
+
+            <TextView
+                android:id="@+id/Result_Fnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/countfriend"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/countfriend"
+                android:shadowColor="#000000"
+                android:shadowDx="0.0"
+                android:shadowDy="2.0"
+                android:shadowRadius="2.0"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:id="@+id/voteframe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/countfriend"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/Result_Fnum" >
+
+                <ImageView
+                    android:id="@+id/countvote"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/heart"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/countfriend"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@id/voteframe" >
+
+                <TextView
+                    android:id="@+id/Result_Vnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0.0"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="2.0"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/result_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/Result_Fnum"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profilepic"
+                android:shadowColor="#000000"
+                android:shadowDx="0.0"
+                android:shadowDy="2.0"
+                android:shadowRadius="2.0"
+                android:text="홍길동"
+                android:textColor="@android:color/white"
+                android:textSize="21sp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/result_Name"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/result_Name" >
+
+                <Button
+                    android:id="@+id/req_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:background="@drawable/btn_cancle2"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="친구신청"
+                    android:visibility="visible" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/notepic"
+            android:layout_alignRight="@id/notepic"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="15dp" >
+
+            <ImageView
+                android:id="@+id/novote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/yesvote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notepic"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/setCurrent_Btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_go_noteleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_left"
+                    android:padding="10dp"
+                    android:text="친구목록" />
+
+                <Button
+                    android:id="@+id/btn_go_noteright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_right"
+                    android:padding="10dp"
+                    android:text="파티목록" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/setCurrent_Btn"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_left" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/setCurrent_Btn"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/icon_right" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_makearticle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/button_box"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_write"
+            android:onClick="onMakearticle"
+            android:text="노트에 글쓰기" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_below="@id/btn_makearticle"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/none_article" />
+    </RelativeLayout>
+
+</ScrollView>

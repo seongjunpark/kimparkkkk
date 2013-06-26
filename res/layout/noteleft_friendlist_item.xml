@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#4c4c4c"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp" >
+
+        <ImageView
+            android:id="@+id/fpic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="0"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:id="@+id/fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/fshare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fname"
+                android:layout_toRightOf="@id/fpic"
+                android:text="나와 공유한 파티 0개"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:layout_weight="0" >
+
+            <Button
+                android:id="@+id/fr_already"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:background="@drawable/btn_ok2"
+                android:layout_gravity="right|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="인기투표"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+             <Button
+                android:id="@+id/fr_req"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:background="@drawable/btn_cancle2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="투표완료"
+                android:textSize="14sp"
+                android:visibility="invisible" /> 
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

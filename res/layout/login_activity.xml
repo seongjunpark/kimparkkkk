@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/funsumer_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/funsumer_logo_login" />
+
+        <ImageView
+            android:id="@+id/loginpic"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mobile_login_background" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="60dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp" >
+
+            
+            <Button
+                android:id="@+id/btn_Joinus"
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"
+                
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/login_button"
+                android:text="펀슈머 가입하기"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+            
+            <Button
+                android:id="@+id/btn_Login"
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"
+                android:layout_below="@id/btn_Joinus"
+                android:background="@drawable/login_button"
+                android:text="로그인 하기" />
+
+
+            <LinearLayout
+                android:id="@+id/editbox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btn_Login"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <EditText
+                    android:id="@+id/enterid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounder_up"
+                    android:hint="이메일"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="#22000000" />
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounder_down"
+                    android:hint="비밀번호"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

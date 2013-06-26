@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="city">
+        <item>전체공개</item>
+        <item>친구에게만</item>
+    </string-array>
+    
+    <string-array name="city1">
+        <item>전체공개</item>
+        <item>파티에만</item>
+    </string-array>
+
+</resources>

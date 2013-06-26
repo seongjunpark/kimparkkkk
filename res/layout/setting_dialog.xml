@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_setting"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_req_accept"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:padding="7dp"
+        android:text="가입승인 관리하기"
+        android:textColor="#9c9c9c"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:scaleType="fitXY"
+        android:src="#d2d2d2" />
+
+    <Button
+        android:id="@+id/btn_mem_manage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:padding="7dp"
+        android:text="파티회원 관리하기"
+        android:textColor="#9c9c9c"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:scaleType="fitXY"
+        android:src="#d2d2d2" />
+
+    <Button
+        android:id="@+id/btn_opensetting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:padding="7dp"
+        android:text="파티속성 설정하기"
+        android:textColor="#9c9c9c"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:scaleType="fitXY"
+        android:src="#d2d2d2" />
+
+    <Button
+        android:id="@+id/btn_change_partypic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:padding="7dp"
+        android:text="파티사진 수정"
+        android:textColor="#9c9c9c"
+        android:textSize="15dp" />
+
+</LinearLayout>
